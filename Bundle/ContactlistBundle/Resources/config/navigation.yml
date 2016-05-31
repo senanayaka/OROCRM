@@ -1,0 +1,21 @@
+oro_menu_config:
+    items:
+       tal_tab:
+           label: Magento
+           uri:   '#'
+           extras:
+               position: 300
+       tal_tab_link:
+           label: Magento Contact LIst
+           route: contact_us_list
+           extras:
+               routes: ['/^contact_us_list/']
+               description: Magento Contact List
+    tree:
+       application_menu:
+           children:
+               tal_tab:
+                   children:
+                       tal_tab_link: ~
+oro_titles:
+    tal_simple_index: Magento Contact Us List

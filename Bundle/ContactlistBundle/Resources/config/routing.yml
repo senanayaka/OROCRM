@@ -1,0 +1,11 @@
+talliance_contactlist_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: TallianceContactlistBundle:Default:index }
+
+
+
+
+contact_us_list:
+    resource:     "@TallianceContactlistBundle/Controller/DefaultController.php"
+    type:         annotation
+    prefix:       /

@@ -1,0 +1,24 @@
+Talliance\Bundle\ContactlistBundle\Entity\SimpleCrud:
+    type: entity
+    table: null
+    repositoryClass: Talliance\Bundle\ContactlistBundle\Entity\SimpleCrudRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        name:
+            type: string
+            length: null
+        email:
+            type: string
+            length: null
+        phone:
+            type: string
+            length: null
+        comments:
+            type: string
+            length: null
+    lifecycleCallbacks: {  }

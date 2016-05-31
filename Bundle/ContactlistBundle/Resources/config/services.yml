@@ -1,0 +1,2 @@
+parameters:
+    talliance_contactlist.simple_crud.entity.class: Talliance\Bundle\ContactlistBundle\Entity\SimpleCrud

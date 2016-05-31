@@ -1,0 +1,26 @@
+datagrid:
+    dusan-simple-grid:
+        source:
+            type: orm
+            query:
+                select:
+                    - simple_crud.id
+                    - simple_crud.name
+                    - simple_crud.email
+                    - simple_crud.phone
+                    - simple_crud.comments
+                from:
+                    - { table: %talliance_contactlist.simple_crud.entity.class%, alias: simple_crud }
+        columns:
+            id:
+                label: Id
+            name:
+                label: Name
+            email:
+                label: Email
+            phone:
+                label: Phone
+            comments:
+                label: Comments
+
+

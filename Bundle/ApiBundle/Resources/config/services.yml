@@ -1,0 +1,14 @@
+parameters:
+    trackside_api.handler.delete.class:    Trackside\Bundle\ApiBundle\Handler\RestDeleteHandler
+    trackside_api.helper.date.class:       Trackside\Bundle\ApiBundle\Helper\DateHelper
+
+services:
+    trackside_api.handler.delete:
+        scope: request
+        class: %trackside_api.handler.delete.class%
+        parent: oro_soap.handler.delete
+        arguments:
+            - @request
+
+    trackside_api.helper.date:
+        class: %trackside_api.helper.date.class%

@@ -1,0 +1,2 @@
+bundles:
+  - { name: Talliance\Bundle\ApiBundle\TallianceApiBundle, priority: 100 }

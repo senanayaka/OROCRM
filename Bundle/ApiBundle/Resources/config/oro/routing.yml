@@ -1,0 +1,11 @@
+talliance_api_bundle:
+    resource:     "@TallianceApiBundle/Controller"
+    type:         annotation
+
+talliance_api_bundle_api:
+    resource:     "@TallianceApiBundle/Resources/config/oro/routing_api.yml"
+    requirements:
+        version:  latest|v1
+        _format:  json
+    defaults:
+        version:  latest
